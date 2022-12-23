@@ -1,4 +1,4 @@
-FROM Dylan-Prins/mkdocs-builder:debian
+FROM dylan-prins/mkdocs-builder:debian
 
 # Copy only requirements to cache them in docker layer
 COPY poetry.lock pyproject.toml /docs/
