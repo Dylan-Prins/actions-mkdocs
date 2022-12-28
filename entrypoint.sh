@@ -30,6 +30,6 @@ if [ -n "${INPUT_CONFIGFILE}" ]; then
 else
     export CONFIG_FILE="${GITHUB_WORKSPACE}/mkdocs.yml"
 fi
-
+git config --global --add safe.directory ${GITHUB_WORKSPACE}
 cd ${GITHUB_WORKSPACE}
 mkdocs build --config-file ${CONFIG_FILE}
